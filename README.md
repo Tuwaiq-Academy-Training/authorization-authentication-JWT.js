@@ -5,7 +5,7 @@
 - ماهي authentication  (المصادقة)
 - ماهي Authorization (التفويض  او التخويل )
 - انشاء  authentication في  middleware 
-
+- ماهي  hashing؟
 
 
 
@@ -78,3 +78,25 @@
 #### يمكننا الآن إضافة رمز مميز في header  باستخدام المفتاح x-access-token وإعادة الاختبار.
 
 ![image](https://www.section.io/engineering-education/how-to-build-authentication-api-with-jwt-token-in-nodejs/success-response.png)
+
+
+
+
+##  ماهي  hashing؟
+
+ال hashing هي عملية تحويل مفتاح معين إلى قيمة أخرى. تُستخدم دالة التجزئة لتوليد القيمة الجديدة وفقًا لخوارزمية رياضية. تُعرف نتيجة دالة التجزئة باسم قيمة التجزئة أو ببساطة التجزئة.
+
+![hash](https://user-images.githubusercontent.com/92247967/201050028-dd6db11c-cb37-4aad-9d78-c28d448654a3.png)
+
+
+تستخدم دالة hash الجيدة خوارزمية hash أحادية الاتجاه ، أو بمعنى آخر ، لا يمكن تحويل hash مرة أخرى إلى المفتاح الأصلي.
+
+![one-way](https://user-images.githubusercontent.com/92247967/201051294-7f8cb869-40b4-4ff0-98b7-c9055f636b41.png)
+
+
+## الاصطدامات
+
+ضع في اعتبارك أن مفتاحين يمكن أن يولدا نفس hash. تُعرف هذه الظاهرة بالاصطدام. هناك عدة طرق للتعامل مع الاصطدامات ، ولكن هذا موضوع لوقت آخر.
+
+![Collisions](https://user-images.githubusercontent.com/92247967/201052348-8a6872f5-d167-481a-801f-e554d013e6d2.png)
+
